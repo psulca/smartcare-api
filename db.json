@@ -48,6 +48,13 @@
       "name": "Test Puerto 8080",
       "role": "driver",
       "id": 6
+    },
+    {
+      "email": "test@local8080.com",
+      "password": "$2a$10$X0C/LMUhntCs8XkBQ1wEkerGfRwOmnUQUtpuVJB7r1UEkVxPLVl9y",
+      "name": "Test Local 8080",
+      "role": "driver",
+      "id": 7
     }
   ],
   "vehicles": [
