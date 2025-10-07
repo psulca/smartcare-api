@@ -9,9 +9,9 @@ const middlewares = jsonServer.defaults();
 // 🔧 Bind router.db to server.db (requerido por json-server-auth)
 server.db = router.db;
 
-// ✅ CORS middleware (mejor práctica)
+// ✅ CORS middleware (habilitado para cualquier origen)
 server.use(cors({
-  origin: ['https://front-end-alpha-weld.vercel.app'], // <-- tu dominio de Vercel
+  origin: true, // Permite cualquier origen
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
   credentials: true,
@@ -40,5 +40,5 @@ server.listen(PORT, HOST, () => {
   console.log(`👤 Users: http://${HOST}:${PORT}/users`);
   console.log(`🚗 Vehicles: http://${HOST}:${PORT}/vehicles`);
   console.log(`🔐 Auth endpoints: /login, /register, /me`);
-  console.log(`🌐 CORS enabled for https://front-end-alpha-weld.vercel.app`);
+  console.log(`🌐 CORS enabled for all origins`);
 });
