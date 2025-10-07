@@ -34,6 +34,13 @@
       "name": "Demo User",
       "role": "driver",
       "id": 4
+    },
+    {
+      "email": "test@puerto5000.com",
+      "password": "$2a$10$7jUn/rnF/6zQLf9jl2TFy.ThsvpotoSYfojBS11RukJ7G9JEUgjN6",
+      "name": "Test Puerto 5000",
+      "role": "driver",
+      "id": 5
     }
   ],
   "vehicles": [
