@@ -2,9 +2,9 @@
   "name": "smartcare-api-server",
   "version": "1.0.0",
   "description": "Fake API server for SmartCare frontend development",
-  "main": "db.json",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server-auth ./db.json --port $PORT --host 0.0.0.0 --routes routes.json"
+    "start": "node server.js"
   },
   "dependencies": {
     "json-server": "^0.17.4",
