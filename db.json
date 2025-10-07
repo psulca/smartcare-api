@@ -27,6 +27,13 @@
       "password": "$2a$10$DoPsmrx/dQJuYDCcQPhiyeNWoJi358x08Eulp7l.hn9Y4CeWgKYUW",
       "name": "Test User",
       "id": 3
+    },
+    {
+      "email": "demo@smartcare.com",
+      "password": "$2a$10$zZOPhOnQTliKSltBcmw8k.cpzPup6IV86QPfunNk2UosyLsJWBy4a",
+      "name": "Demo User",
+      "role": "driver",
+      "id": 4
     }
   ],
   "vehicles": [

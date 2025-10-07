@@ -4,9 +4,10 @@
   "description": "Fake API server for SmartCare frontend development",
   "main": "db.json",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0 --routes routes.json"
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0 --routes routes.json --middlewares json-server-auth"
   },
   "dependencies": {
-    "json-server": "^0.17.4"
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
   }
 }
