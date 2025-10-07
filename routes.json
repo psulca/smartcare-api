@@ -1,0 +1,10 @@
+{
+  "users": 600,
+  "vehicles": 640,
+  "appointments": 640,
+  "services": 644,
+  "reviews": 644,
+  "workshops": 644,
+  "maintenance_history": 640,
+  "quotes": 640
+}
