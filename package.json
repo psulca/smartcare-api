@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch bd.json --port 3002 --host 0.0.0.0"
+    "start": "json-server ./bd.json --port 3002 --host 0.0.0.0"
   },
   "keywords": [],
   "author": "",
