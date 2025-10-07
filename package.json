@@ -1,15 +1,12 @@
 {
-  "name": "smartcare-api",
+  "name": "smartcare-api-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Fake API server for SmartCare frontend development",
+  "main": "db.json",
   "scripts": {
-    "start": "node server.js"
+    "start": "json-server --watch db.json --port 3002 --host 0.0.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.4"
   }
 }
