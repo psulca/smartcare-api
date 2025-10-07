@@ -41,6 +41,13 @@
       "name": "Test Puerto 5000",
       "role": "driver",
       "id": 5
+    },
+    {
+      "email": "test@puerto8080.com",
+      "password": "$2a$10$3Ley83tzzjRiYXE31I4xauz59Ir4fzjSyKnRNu7sVzUlr0ImYyyJm",
+      "name": "Test Puerto 8080",
+      "role": "driver",
+      "id": 6
     }
   ],
   "vehicles": [
