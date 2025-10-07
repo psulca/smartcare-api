@@ -1,35 +1,35 @@
 const jsonServer = require('json-server');
 const auth = require('json-server-auth');
+const cors = require('cors');
 
 const server = jsonServer.create();
 const router = jsonServer.router('./db.json');
 const middlewares = jsonServer.defaults();
 
-// Bind router.db to server.db
+// 🔧 Bind router.db to server.db (requerido por json-server-auth)
 server.db = router.db;
 
-// Configure CORS
-server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  
-  if (req.method === 'OPTIONS') {
-    res.sendStatus(200);
-  } else {
-    next();
-  }
-});
+// ✅ CORS middleware (mejor práctica)
+server.use(cors({
+  origin: ['https://front-end-alpha-weld.vercel.app'], // <-- tu dominio de Vercel
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
+  credentials: true,
+}));
 
-// Use middlewares
+// ✅ Manejar preflight correctamente
+server.options('*', cors());
+
+// ✅ Middlewares por defecto de json-server
 server.use(middlewares);
 
-// Use auth middleware
+// ✅ Middleware de autenticación (debe ir antes del router)
 server.use(auth);
 
-// Use router
+// ✅ Rutas principales
 server.use(router);
 
+// ✅ Configuración de puerto y host
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '0.0.0.0';
 
@@ -40,5 +40,5 @@ server.listen(PORT, HOST, () => {
   console.log(`👤 Users: http://${HOST}:${PORT}/users`);
   console.log(`🚗 Vehicles: http://${HOST}:${PORT}/vehicles`);
   console.log(`🔐 Auth endpoints: /login, /register, /me`);
-  console.log(`🌐 CORS enabled for all origins`);
+  console.log(`🌐 CORS enabled for https://front-end-alpha-weld.vercel.app`);
 });
