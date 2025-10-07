@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Pérez",
+      "email": "juan.perez@email.com",
+      "phone": "+1 234 567 8900",
+      "role": "driver",
+      "avatar": "https://avatar.iran.liara.run/public/boy?username=Juan",
+      "rating": 4.8,
+      "memberSince": "2022",
+      "createdAt": "2022-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "María García",
+      "email": "maria.garcia@email.com",
+      "phone": "+1 234 567 8901",
+      "role": "workshop",
+      "avatar": "https://avatar.iran.liara.run/public/girl?username=Maria",
+      "rating": 4.9,
+      "memberSince": "2021",
+      "createdAt": "2021-03-20T14:30:00Z"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": "2020",
+      "licensePlate": "ABC-123",
+      "mileage": 45000,
+      "lastMaintenance": "2024-01-15",
+      "nextMaintenance": "2024-04-15",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "brand": "Honda",
+      "model": "Civic",
+      "year": "2019",
+      "licensePlate": "XYZ-789",
+      "mileage": 52000,
+      "lastMaintenance": "2024-02-10",
+      "nextMaintenance": "2024-05-10",
+      "status": "active"
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "name": "Taller Mecánico Central",
+      "address": "Av. Principal 123, Ciudad",
+      "phone": "+1 234 567 8902",
+      "email": "info@tallercentral.com",
+      "rating": 4.7,
+      "services": ["Mantenimiento", "Reparación", "Diagnóstico"],
+      "hours": "Lunes a Viernes: 8:00-18:00",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Auto Service Plus",
+      "address": "Calle Secundaria 456, Ciudad",
+      "phone": "+1 234 567 8903",
+      "email": "contact@autoservice.com",
+      "rating": 4.5,
+      "services": ["Mantenimiento", "Llantas", "Aceite"],
+      "hours": "Lunes a Sábado: 7:00-19:00",
+      "latitude": 40.7589,
+      "longitude": -73.9851,
+      "status": "active"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "workshopId": 1,
+      "vehicleId": 1,
+      "service": "Mantenimiento preventivo",
+      "date": "2024-03-15",
+      "time": "10:00",
+      "status": "pending",
+      "estimatedDuration": 120,
+      "estimatedCost": 150.0,
+      "notes": "Cambio de aceite y filtros"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "workshopId": 2,
+      "vehicleId": 2,
+      "service": "Revisión de frenos",
+      "date": "2024-03-20",
+      "time": "14:00",
+      "status": "confirmed",
+      "estimatedDuration": 90,
+      "estimatedCost": 200.0,
+      "notes": "Revisión completa del sistema de frenos"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "workshopId": 1,
+      "name": "Mantenimiento preventivo",
+      "description": "Cambio de aceite, filtros y revisión general",
+      "duration": 120,
+      "price": 150.0,
+      "category": "Mantenimiento"
+    },
+    {
+      "id": 2,
+      "workshopId": 1,
+      "name": "Revisión de frenos",
+      "description": "Inspección y reparación del sistema de frenos",
+      "duration": 90,
+      "price": 200.0,
+      "category": "Reparación"
+    },
+    {
+      "id": 3,
+      "workshopId": 2,
+      "name": "Cambio de llantas",
+      "description": "Instalación y balanceo de llantas nuevas",
+      "duration": 60,
+      "price": 100.0,
+      "category": "Llantas"
+    }
+  ],
+  "maintenance_history": [
+    {
+      "id": 1,
+      "userId": 1,
+      "vehicleId": 1,
+      "workshopId": 1,
+      "service": "Mantenimiento preventivo",
+      "date": "2024-01-15",
+      "cost": 150.0,
+      "mileage": 42000,
+      "status": "completed",
+      "notes": "Cambio de aceite y filtros completado"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "vehicleId": 2,
+      "workshopId": 2,
+      "service": "Revisión de frenos",
+      "date": "2024-02-10",
+      "cost": 180.0,
+      "mileage": 50000,
+      "status": "completed",
+      "notes": "Pastillas de freno reemplazadas"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "workshopId": 1,
+      "vehicleId": 1,
+      "service": "Mantenimiento preventivo",
+      "description": "Cambio de aceite y filtros",
+      "estimatedCost": 150.0,
+      "estimatedDuration": 120,
+      "status": "pending",
+      "requestDate": "2024-03-10T10:00:00Z",
+      "expiryDate": "2024-03-17T10:00:00Z"
+    }
+  ]
+}
