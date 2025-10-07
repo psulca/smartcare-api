@@ -2,9 +2,9 @@
   "name": "smartcare-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server ./bd.json --port 3001 --host 0.0.0.0"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
