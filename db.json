@@ -1,60 +1,26 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Juan Pérez",
-      "email": "juan.perez@email.com",
-      "phone": "+1 234 567 8900",
+      "email": "admin1@admin.com",
+      "password": "$2a$10$VEG1OHyIL7F9b91U0MtPjOkutQuPLTJFdZoKYK6fy0MK7W6BxR3b6",
+      "name": "Juan Perez",
+      "phone": "+1234567890",
       "role": "driver",
-      "avatar": "https://avatar.iran.liara.run/public/boy?username=Juan",
-      "rating": 4.8,
-      "memberSince": "2022",
-      "createdAt": "2022-01-15T10:00:00Z"
+      "avatar": "https://avatar.iran.liara.run/public/62",
+      "rating": 4.6,
+      "memberSince": "2025",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "María García",
-      "email": "maria.garcia@email.com",
-      "phone": "+1 234 567 8901",
+      "email": "admin2@admin.com",
+      "password": "$2a$10$nSOD4vGHk/sCdrIHtr.I4.D0WeiTfgGh6WMa9bJh1X7ymJcBU7FGq",
+      "name": "Workshop Cars",
+      "phone": "+9999321654",
       "role": "workshop",
-      "avatar": "https://avatar.iran.liara.run/public/girl?username=Maria",
-      "rating": 4.9,
-      "memberSince": "2021",
-      "createdAt": "2021-03-20T14:30:00Z"
-    },
-    {
-      "email": "test@email.com",
-      "password": "$2a$10$DoPsmrx/dQJuYDCcQPhiyeNWoJi358x08Eulp7l.hn9Y4CeWgKYUW",
-      "name": "Test User",
-      "id": 3
-    },
-    {
-      "email": "demo@smartcare.com",
-      "password": "$2a$10$zZOPhOnQTliKSltBcmw8k.cpzPup6IV86QPfunNk2UosyLsJWBy4a",
-      "name": "Demo User",
-      "role": "driver",
-      "id": 4
-    },
-    {
-      "email": "test@puerto5000.com",
-      "password": "$2a$10$7jUn/rnF/6zQLf9jl2TFy.ThsvpotoSYfojBS11RukJ7G9JEUgjN6",
-      "name": "Test Puerto 5000",
-      "role": "driver",
-      "id": 5
-    },
-    {
-      "email": "test@puerto8080.com",
-      "password": "$2a$10$3Ley83tzzjRiYXE31I4xauz59Ir4fzjSyKnRNu7sVzUlr0ImYyyJm",
-      "name": "Test Puerto 8080",
-      "role": "driver",
-      "id": 6
-    },
-    {
-      "email": "test@local8080.com",
-      "password": "$2a$10$X0C/LMUhntCs8XkBQ1wEkerGfRwOmnUQUtpuVJB7r1UEkVxPLVl9y",
-      "name": "Test Local 8080",
-      "role": "driver",
-      "id": 7
+      "avatar": "https://avatar.iran.liara.run/public/16",
+      "rating": 3.9,
+      "memberSince": "2025",
+      "id": 2
     }
   ],
   "vehicles": [
